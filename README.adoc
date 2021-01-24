@@ -1,6 +1,6 @@
 = AWS Cloudfront Logs Parser
 
-The AWS Cloudfront logs parser is a utility converts a directory of AWS Cloudfront log files (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/AccessLogs.html) and converts it into a local relational database - http://hsqldb.org/
+The AWS Cloudfront logs parser is a utility that traverses a directory of https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/AccessLogs.html[AWS Cloudfront log files] and converts it into a local relational database - HSQLDB [http://hsqldb.org/]
 
 image::screenshot-01.png[AWS Cloudfront Access Logs Query]
 
