@@ -1,16 +1,16 @@
 = AWS Cloudfront Logs Parser
 
-The AWS Cloudfront logs parser is a utility that traverses a directory of https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/AccessLogs.html[AWS Cloudfront log files] and converts it into a local relational database - HSQLDB [http://hsqldb.org/]
+The AWS Cloudfront logs parser is a utility that traverses a directory of https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/AccessLogs.html[AWS Cloudfront log files] and converts it into a local relational database - http://hsqldb.org/[HSQLDB]
 
 image::screenshot-01.png[AWS Cloudfront Access Logs Query]
 
-In essence, it is a simple, standalone utility to that allowed the author to quickly get to a position to run some SQL queries against his log traffic and provided an excuse to try out some of the latest Java 15 features.
+In essence, it is a simple, standalone utility that allowed the author to quickly get to a position to run some SQL queries against his log traffic and provided an excuse to try out some of the latest Java 15 features.
 
 == Getting Started
 
 === Log Files Download
 
-You need to make the AWS Cloudfront log files available in a location that can be read by the utility. To do this, you need to install the AWS command line interface - https://aws.amazon.com/cli/ and configure it appropriately:
+You need to make the AWS Cloudfront log files available in a location that can be read by the utility. To do this, you need to install the AWS command line interface - https://aws.amazon.com/cli/ - and configure it appropriately:
 
 ```
 aws configure
@@ -32,7 +32,7 @@ mvn clean install
 
 === Run the Utility
 
-This will produce an executable JAR file - `target/cloudfront-exec.jar`. You can now build an HSQLDB file with the following command:
+The build will produce an executable JAR file - `target/cloudfront-exec.jar`. You can now build an HSQLDB file with the following command:
 
 ```
 java --enable-preview -jar target/cloudfront-exec.jar /home/jsteenkamp/aws-access-logs  /home/jsteenkamp/aws-access-logs-database
@@ -41,7 +41,7 @@ java --enable-preview -jar target/cloudfront-exec.jar /home/jsteenkamp/aws-acces
 Where:
 
 * `/home/jsteenkamp/aws-access-logs` is the directory to where you have downloaded your AWS Cloudfront log files from S3
-* `/home/jsteenkamp/aws-access-logs-database` is the directory / database to where you want to load these items into.
+* `/home/jsteenkamp/aws-access-logs-database` is the directory / database to where you want to load these items into. This same URI will later be used to connect to the database through DBeaver.
 
 === Connect to the Database using DBeaver
 
