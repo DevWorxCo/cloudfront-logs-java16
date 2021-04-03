@@ -68,7 +68,7 @@ If you encounter errors such as the ones listed below, you are not using Java 15
 ```
 
 ```
-in project cloudfront-logs-java15: Fatal error compiling: error: invalid target release: 15 -> [Help 1]
+in project cloudfront-logs-java16: Fatal error compiling: error: invalid target release: 16 -> [Help 1]
 ```
 
 ==== Long Entries in Log File

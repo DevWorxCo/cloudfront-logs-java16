@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>uk.co.devworx</groupId>
-    <artifactId>cloudfront-logs-java15</artifactId>
+    <artifactId>cloudfront-logs-java16</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>cloudfront-logs-java15</name>
+    <name>cloudfront-logs-java16</name>
 
-	<properties>
-		
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		
-		<maven.core.version>3.3.9</maven.core.version>
+    <properties>
 
-		<maven.dependency.plugin.version>3.1.1</maven.dependency.plugin.version>
-		
-		<maven.surefire.plugin.version>2.22.0</maven.surefire.plugin.version>
-		<maven.failsafe.plugin.version>2.22.0</maven.failsafe.plugin.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<junit.jupiter.version>5.7.0</junit.jupiter.version>
+        <maven.core.version>3.3.9</maven.core.version>
 
-        <java.source.version>15</java.source.version>
+        <maven.dependency.plugin.version>3.1.1</maven.dependency.plugin.version>
+
+        <maven.surefire.plugin.version>2.22.0</maven.surefire.plugin.version>
+        <maven.failsafe.plugin.version>2.22.0</maven.failsafe.plugin.version>
+
+        <junit.jupiter.version>5.7.0</junit.jupiter.version>
+
+        <java.source.version>16</java.source.version>
 
     </properties>
- 
+
     <build>
 
         <plugins>
@@ -58,8 +59,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-	                <source>15</source>
-			        <target>15</target>
+                    <source>16</source>
+                    <target>16</target>
                     <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
@@ -69,6 +70,14 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <argLine>--enable-preview</argLine>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>16</source>
+                    <target>16</target>
                 </configuration>
             </plugin>
 
@@ -102,7 +111,7 @@
     </dependencies>
 
     <dependencyManagement>
-    
+
         <dependencies>
 
             <dependency>
@@ -112,35 +121,35 @@
             </dependency>
 
             <dependency>
-				<groupId>org.junit.jupiter</groupId>
-				<artifactId>junit-jupiter</artifactId>
-				<version>${junit.jupiter.version}</version>
-				<scope>test</scope>
-			</dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>${junit.jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
 
-			<dependency>
+            <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-api</artifactId>
                 <version>2.14.0</version>
             </dependency>
-            
+
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-core</artifactId>
                 <version>2.14.0</version>
-            </dependency> 
+            </dependency>
 
         </dependencies>
-        
+
     </dependencyManagement>
 
- 	<distributionManagement>
-		<repository>
-			<id>github</id>
-			<name>GitHub OWNER Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/DevWorxCo/cloudfront-logs-java15</url>
-		</repository>
-	</distributionManagement>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/DevWorxCo/cloudfront-logs-java16</url>
+        </repository>
+    </distributionManagement>
 
 
 </project>
