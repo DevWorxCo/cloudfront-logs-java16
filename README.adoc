@@ -4,7 +4,7 @@ The AWS Cloudfront logs parser is a utility that traverses a directory of https:
 
 image::screenshot-01.png[AWS Cloudfront Access Logs Query]
 
-In essence, it is a simple, standalone utility that allowed the author to quickly get to a position to run some SQL queries against his log traffic and provided an excuse to try out some of the latest Java 15 features.
+In essence, it is a simple, standalone utility that allowed the author to quickly get to a position to run some SQL queries against his log traffic and provided an excuse to try out some of the latest Java 16 features.
 
 == Getting Started
 
@@ -61,7 +61,7 @@ When prompted to download the drivers, please do so. You are now ready to start 
 
 ==== Wrong Version of Java
 
-If you encounter errors such as the ones listed below, you are not using Java 15+. Please ensure that you download an appropriate JDK from sites such as https://adoptopenjdk.net/ or https://www.azul.com/downloads/zulu-community/?package=jdk
+If you encounter errors such as the ones listed below, you are not using Java 16+. Please ensure that you download an appropriate JDK from sites such as https://adoptopenjdk.net/ or https://www.azul.com/downloads/zulu-community/?package=jdk
 
 ```
 (class file version 59.65535) was compiled with preview features that are unsupported. This version of the Java Runtime only recognizes preview features for class file version 55.65535

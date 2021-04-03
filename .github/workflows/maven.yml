@@ -1,4 +1,4 @@
-name: Java 15 Build on Linux
+name: Java 16 Build on Linux
 
 on: [push]
 
