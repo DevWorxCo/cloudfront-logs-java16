@@ -21,7 +21,7 @@ CREATE TABLE cloudfront_logs
     CS_PROTOCOL                             VARCHAR(1024),
     CS_BYTES                                BIGINT,
     TIME_TAKEN                              DOUBLE,
-    X_FORWARDED_FOR                         VARCHAR(1024),
+    X_FORWARDED_FOR                         VARCHAR(101024),
     SSL_PROTOCOL                            VARCHAR(1024),
     SSL_CIPHER                              VARCHAR(1024),
     EDGE_RESPONSE_RESULT_TYPE               VARCHAR(1024),
