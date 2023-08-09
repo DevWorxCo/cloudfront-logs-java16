@@ -12,7 +12,7 @@ CREATE TABLE cloudfront_logs
     CS_URI_STEM                             VARCHAR(1024),
     SC_STATUS                               VARCHAR(1024),
     CS_REFERER                              VARCHAR(10024),
-    CS_USER_AGENT                           VARCHAR(1024),
+    CS_USER_AGENT                           VARCHAR(101024),
     CS_URI_QUERY                            VARCHAR(10024),
     CS_COOKIE                               VARCHAR(10024),
     EDGE_RESULT_TYPE                        VARCHAR(1024),
