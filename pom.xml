@@ -22,7 +22,7 @@
 
         <junit.jupiter.version>5.7.0</junit.jupiter.version>
 
-        <java.source.version>17</java.source.version>
+        <java.source.version>21</java.source.version>
 
     </properties>
 
@@ -61,7 +61,6 @@
                 <configuration>
                     <source>17</source>
                     <target>17</target>
-                    <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
 
@@ -69,15 +68,14 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <argLine>--enable-preview</argLine>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>17</source>
-                    <target>17</target>
+                    <source>${java.source.version}</source>
+                    <target>${java.source.version}</target>
                 </configuration>
             </plugin>
 
